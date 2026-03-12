@@ -1,6 +1,9 @@
 ## Task 5
 This merge should create a merge commit.
 
+## Task 6
+I'm here for you just to see how rebase works.
+
 # 1. Kiedy Git wykona fast-forward, a kiedy powstaje merge commit?
 Fast-forward merge włacza, gdy gałąź docelowa <master> (> git merge dev) nie ma nowych commitów od momentu utworzenia drugiej gałęzi <dev>.
 Merge commit wykona się, gdy obie gałęzie (<master> i <dev>) mają nowe commity od momentu rozdzielenia.
