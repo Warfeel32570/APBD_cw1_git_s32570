@@ -118,3 +118,4 @@ static int CalculateMin(int[] values)
 }
 
 Console.WriteLine("Min: " + CalculateMin(vals));
+Console.WriteLine("CalculateMin tested successfully");
