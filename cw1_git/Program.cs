@@ -22,3 +22,18 @@ static double InputHelper(string message)
 
     return double.Parse(input ?? "0");
 }
+
+//Forth commit --> [3] dev
+static double ReadNumber(string message)
+{
+    Console.Write(message);
+    string? input = Console.ReadLine();
+
+    if (!double.TryParse(input, out double result))
+    {
+        Console.WriteLine("Invalid number!");
+        return 0;
+    }
+
+    return result;
+}
