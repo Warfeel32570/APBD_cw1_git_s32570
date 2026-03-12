@@ -19,6 +19,7 @@ static double InputHelper(string message)
 {
     Console.Write(message);
     string? input = Console.ReadLine();
+    Console.WriteLine(" > End of InputHelper.");
 
     return double.Parse(input ?? "0");
 }
@@ -35,5 +36,38 @@ static double ReadNumber(string message)
         return 0;
     }
 
+    Console.WriteLine(" > End of ReadNumber.");
     return result;
 }
+
+//Fifth commit --> [4] feature-average
+static double AverageOfTwo(double a, double b)
+{
+    Console.WriteLine("Average of " + a + " and " + b);
+    Console.WriteLine("Result:");
+    return (a + b) / 2;
+}
+
+double avgOfTwo = AverageOfTwo(63.89, 340.45);
+Console.WriteLine(avgOfTwo);
+Console.WriteLine(" > End of AverageOfTwo.");
+
+static double AverageInArray(int[] values)
+{
+    if (values == null || values.Length == 0)
+    {
+        Console.WriteLine("Array is empty.");
+        return 0;
+    }
+
+    int sum = 0;
+
+    for (int i = 0; i < values.Length; i++)
+    {
+        sum += values[i];
+    }
+
+    Console.WriteLine("A > End of AverageInArray.");
+    return (double)sum / values.Length;
+}
+
