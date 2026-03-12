@@ -71,7 +71,7 @@ static double AverageInArray(int[] values)
     return (double)sum / values.Length;
 }
 
-Console.WriteLine("---End of Git entry jorney---");
+Console.WriteLine("---End of Git entry jorney. OMG this really can cause problems---");
 
 //Sixth commit --> [5] feature-max
 static int CalculateMax(int[] values)
