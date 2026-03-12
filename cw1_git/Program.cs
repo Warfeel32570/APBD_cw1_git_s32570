@@ -73,3 +73,26 @@ static double AverageInArray(int[] values)
 
 Console.WriteLine("---End of Git entry jorney---");
 
+//Sixth commit --> [5] feature-max
+static int CalculateMax(int[] values)
+{
+    if (values == null || values.Length == 0)
+    {
+        Console.WriteLine("Array is empty.");
+        return 0;
+    }
+
+    int max = values[0];
+
+    for (int i = 1; i < values.Length; i++)
+    {
+        if (values[i] > max)
+            max = values[i];
+    }
+
+    return max;
+}
+
+int[] vals = { 13, 23, 4, 21, 18, 56 };
+Console.WriteLine("Max: " + CalculateMax(vals));
+
