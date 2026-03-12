@@ -71,3 +71,5 @@ static double AverageInArray(int[] values)
     return (double)sum / values.Length;
 }
 
+Console.WriteLine("---End of Git entry jorney---");
+
